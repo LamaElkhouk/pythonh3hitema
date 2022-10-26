@@ -10,7 +10,7 @@ products = [
 #methode CRUD : Create Read Update Delete
 
 #get
-@app.get("/products")
+@app.get("/")
 async def get_all():
     return products
 
