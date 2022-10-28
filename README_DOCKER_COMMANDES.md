@@ -1,5 +1,6 @@
 # pythonh3hitema
-
+api ensemble d'interface 
+on lance un script seveur qui att les requetes client qui fonctionne sous forme de routes
 =>Dockerfile = fichier de configuration,
 
 =>contient des instructions qui construise (build) une image docker
@@ -32,7 +33,7 @@ sudo service docker start
 sudo docker build -t imagestreamlit:1 .
 
 =>commande pour build 
-sudo docker run --name streamlitcontaineur -p 8501:8501 imagestreamlit
+sudo docker run -itd --name streamlitcontaineur -p 8501:8501 imagestreamlit
 
 docker images -q     => id de l'image créer 
 sudo docker container ls -a  => liste des 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    {%if products%}
+    <p>tout les produits : {{products}}
+    </p>
+    <p> s'affiche sur l'url http://127.0.0.1:8000/</p>
+        {% for product in products %}
+            <li>id : {{product.id}}</li>
+            <li>name : {{product.name}}</li>
+            <li>price : {{product.price}}</li>
+        {% endfor %}
+   {%endif%}
+   {%if one_product%}
+    <p> un produit :{{one_product}}</p>
+    <p> s'affiche sur l'url http://127.0.0.1:8000/products/1 pour le premier produit</p>
+
+    
+            <p>id: {{one_product.id}}</p>
+            <p>name: {{one_product.name}}</p>
+            <p>price: {{one_product.price}}</p>
+    {%endif%}
+      
+    
+</body>
+</html>

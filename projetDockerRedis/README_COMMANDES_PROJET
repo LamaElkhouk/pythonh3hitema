@@ -1,0 +1,4 @@
+
+1)lancer la commande "php -S localhost:8080"
+2)se rendre sur le lien http://localhost:8080/compteur.php
+
